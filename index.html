@@ -324,7 +324,7 @@
           title: "EC2 Instances",
           id: "ec2-instances",
           jmespath: "Reservations[].Instances",
-          headings: ["InstanceId", "InstanceType", "ImageId", "LaunchTime", "KeyName", "State.Name"]
+          headings: ["Tags[?Key=='Name'].Value[]", "InstanceId", "InstanceType", "ImageId", "LaunchTime", "KeyName", "State.Name"]
         },
       ];
 
